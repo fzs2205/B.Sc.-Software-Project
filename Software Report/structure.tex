@@ -1,0 +1,77 @@
+\usepackage{amsmath, amsfonts, amsthm,url} % Math packages
+\usepackage{changepage}
+
+\newenvironment{subs}
+  {\begin{adjustwidth}{3em}{0pt}}
+  {\end {adjustwidth}}
+\usepackage{imakeidx} % index
+
+\usepackage{listings} % Code listings, with syntax highlighting
+
+\usepackage[english]{babel} % English language hyphenation
+
+\usepackage{graphicx} % Required for inserting images
+\graphicspath{{Figures/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Required for better horizontal rules in tables
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\usepackage{enumitem} % Required for list customisation
+% \setlist{noitemsep} % No spacing between list items
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage{geometry}
+	\geometry{
+		a4paper,
+		total={160mm,245mm},
+		left=1in,
+		right=1in,
+	}
+
+\usepackage{lipsum}
+\usepackage{layout}
+
+
+%	FONTS
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Use 8-bit encoding
+
+\usepackage{fourier} % Use the Adobe Utopia font for the document
+
+%----------------------------------------------------------------------------------------
+%	SECTION TITLES
+%----------------------------------------------------------------------------------------
+
+\usepackage{sectsty} % Allows customising section commands
+
+\sectionfont{\vspace{6pt}\normalfont\bfseries\boldmath} % \section{} styling
+\subsectionfont{\normalfont\bfseries} % \subsection{} styling
+\subsubsectionfont{\normalfont\bfseries} % \subsubsection{} styling
+\paragraphfont{\normalfont\scshape} % \paragraph{} styling
+
+%----------------------------------------------------------------------------------------
+%	HEADERS AND FOOTERS
+%----------------------------------------------------------------------------------------
+
+\usepackage{scrlayer-scrpage} % Required for customising headers and footers
+
+\ohead*{} % Right header
+\ihead*{} % Left header
+\chead*{} % Centre header
+
+\ofoot*{} % Right footer
+\ifoot*{} % Left footer
+\cfoot*{\pagemark} % Centre footer
+
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
